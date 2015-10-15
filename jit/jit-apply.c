@@ -935,7 +935,7 @@ unsigned int
 jit_get_closure_size(void)
 {
 #ifdef jit_closure_size
-	return jit_closure_size;
+	return sizeof(struct jit_closure);
 #else
 	return 0;
 #endif
